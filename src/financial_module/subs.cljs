@@ -29,3 +29,13 @@
  :accounts-payable
  (fn [db]
    (:accounts-payable db)))
+
+(refx/reg-sub
+ :courses
+ (fn [db]
+   (:courses db)))
+
+(refx/reg-sub
+ :subjects
+ (fn [db]
+   (:subjects db)))

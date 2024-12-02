@@ -58,3 +58,13 @@
  :set-accounts-payable
  (fn [db [_ accounts-payable]]
    (assoc db :accounts-payable accounts-payable)))
+
+(refx/reg-event-db
+ :set-courses
+ (fn [db [_ courses]]
+   (assoc db :courses courses)))
+
+(refx/reg-event-db
+ :set-subjects
+ (fn [db [_ courses]]
+   (assoc db :subjects courses)))

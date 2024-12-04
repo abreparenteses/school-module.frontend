@@ -57,4 +57,15 @@
        ;; I.e (refx/dispatch [::events/load-something-with-ajax])
        ;; Teardown can be done here.
        :start (fn [& _params]
-                (set-title! "subjects"))}]}]])
+                (set-title! "subjects"))}]}]
+
+   ["attending"
+    {:name      ::attending
+     :view      views/view-attending
+     :link-text "Attending"
+     :controllers
+     [{;; Do whatever initialization needed for home page
+       ;; I.e (refx/dispatch [::events/load-something-with-ajax])
+       ;; Teardown can be done here.
+       :start (fn [& _params]
+                (set-title! "attending"))}]}]])

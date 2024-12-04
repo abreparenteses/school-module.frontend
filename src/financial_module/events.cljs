@@ -71,5 +71,10 @@
 
 (refx/reg-event-db
  :set-subjects
- (fn [db [_ courses]]
-   (assoc db :subjects courses)))
+ (fn [db [_ subjects]]
+   (assoc db :subjects subjects)))
+
+(refx/reg-event-db
+ :set-attending
+ (fn [db [_ attending]]
+   (assoc db :attending attending)))

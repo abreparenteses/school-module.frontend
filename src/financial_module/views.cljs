@@ -1,5 +1,6 @@
 (ns financial-module.views
-  (:require [financial-module.views.courses :as views.courses]
+  (:require [financial-module.views.attending :as views.attending]
+            [financial-module.views.courses :as views.courses]
             [financial-module.views.main :as views.main]
             [financial-module.views.login :as views.login]
             [financial-module.views.students :as views.students]
@@ -42,3 +43,11 @@
       (if (empty? (:token session))
         (redirect! "/")
         ($ views.subjects/main {:session session}))))))
+
+(defnc view-attending [{:keys [_]}]
+  (let [session (refx/use-sub [:session])]
+    (<>
+     (d/main
+      (if (empty? (:token session))
+        (redirect! "/")
+        ($ views.attending/main {:session session}))))))

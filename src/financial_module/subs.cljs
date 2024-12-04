@@ -44,3 +44,8 @@
  :subjects
  (fn [db]
    (:subjects db)))
+
+(refx/reg-sub
+ :attending
+ (fn [db]
+   (:attending db)))

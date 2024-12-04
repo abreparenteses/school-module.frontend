@@ -10,7 +10,7 @@
 (defn redirect! [loc]
   (set! (.-location js/window) loc))
 
-(defnc home [{:keys [_]}]
+(defnc view-home [{:keys [_]}]
   (let [session (refx/use-sub [:session])]
     (<>
      (d/main
@@ -23,8 +23,7 @@
     (<>
      (d/main
       (if (empty? (:token session))
-        #_(redirect! "/")
-        ($ views.login/login)
+        (redirect! "/")
         ($ views.courses/main {:session session}))))))
 
 (defnc view-subjects [{:keys [_]}]
@@ -32,6 +31,5 @@
     (<>
      (d/main
       (if (empty? (:token session))
-        #_(redirect! "/")
-        ($ views.login/login)
+        (redirect! "/")
         ($ views.subjects/main {:session session}))))))

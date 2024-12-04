@@ -57,6 +57,8 @@
                             :onSubmit (fn [e]
                                         (.preventDefault e)
                                         (create-entry name description session))}
+                           (d/h1 {:className "font-bold text-4xl my-4"}
+                                 "Courses")
                            (d/input {:name "name"
                                      :type "text"
                                      :placeholder "Name"

@@ -28,10 +28,10 @@
                              (d/li (d/a {:href "/#/attending"} "Attending"))))
                 (d/a {:className "btn btn-ghost text-xl"
                       :href "/#/"}
-                     (d/img {:src "/img/financial.png"
+                     (d/img {:src "/img/school.png"
                              :width "20"
-                             :alt "Financial Module logo"})
-                     "Financial Module"))
+                             :alt "School Module logo"})
+                     "School Module"))
 
          (d/div {:className "navbar-center hidden lg:flex"}
                 (d/ul {:className "menu menu-horizontal px-1"}

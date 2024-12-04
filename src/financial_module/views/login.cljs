@@ -7,7 +7,7 @@
 (defnc login [{:keys [_]}]
   (d/div {:class "flex h-screen"}
          (d/div {:className "m-auto md:container md:mx-auto py-10 flex items-center justify-center"}
-                (d/div {:className "w-1/4 bg-neutral rounded-lg py-10 align-center"}
+                (d/div {:className "w-1/4 bg-info rounded-lg py-10 align-center"}
                        (d/div {:class "md:flex md:flex-col md:items-center md:gap-4"}
                               (d/h1 {:className "text-2xl font-bold text-center"}
                                     "Login")
@@ -35,7 +35,7 @@
                                                  :className "grow"
                                                  :placeholder "Password"}))
 
-                              (d/button {:className "btn btn-primary flex items-center gap-2"
+                              (d/button {:className "btn btn-neutral flex items-center gap-2"
                                          :onClick #(session/update-session {:username (.-value (js/document.querySelector "input[name=username]"))
                                                                             :password (.-value (js/document.querySelector "input[name=password]"))})}
                                         "Login"))))))

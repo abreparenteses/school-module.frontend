@@ -181,4 +181,4 @@
                                      :className "modal-backdrop"}
                                     (d/button "close"))))
 
-           ($ footer {}))))
+           #_($ footer {}))))

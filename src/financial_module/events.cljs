@@ -65,6 +65,11 @@
    (assoc db :courses courses)))
 
 (refx/reg-event-db
+ :set-students
+ (fn [db [_ students]]
+   (assoc db :students students)))
+
+(refx/reg-event-db
  :set-subjects
  (fn [db [_ courses]]
    (assoc db :subjects courses)))

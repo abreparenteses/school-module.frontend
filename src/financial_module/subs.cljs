@@ -36,6 +36,11 @@
    (:courses db)))
 
 (refx/reg-sub
+ :students
+ (fn [db]
+   (:students db)))
+
+(refx/reg-sub
  :subjects
  (fn [db]
    (:subjects db)))

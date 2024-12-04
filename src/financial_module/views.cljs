@@ -2,6 +2,7 @@
   (:require [financial-module.views.courses :as views.courses]
             [financial-module.views.main :as views.main]
             [financial-module.views.login :as views.login]
+            [financial-module.views.students :as views.students]
             [financial-module.views.subjects :as views.subjects]
             [helix.core :refer [$ <> defnc]]
             [helix.dom :as d]
@@ -25,6 +26,14 @@
       (if (empty? (:token session))
         (redirect! "/")
         ($ views.courses/main {:session session}))))))
+
+(defnc view-students [{:keys [_]}]
+  (let [session (refx/use-sub [:session])]
+    (<>
+     (d/main
+      (if (empty? (:token session))
+        (redirect! "/")
+        ($ views.students/main {:session session}))))))
 
 (defnc view-subjects [{:keys [_]}]
   (let [session (refx/use-sub [:session])]

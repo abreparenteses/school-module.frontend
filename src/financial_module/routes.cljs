@@ -37,6 +37,17 @@
        :start (fn [& _params]
                 (set-title! "courses"))}]}]
 
+   ["students"
+    {:name      ::students
+     :view      views/view-students
+     :link-text "Students"
+     :controllers
+     [{;; Do whatever initialization needed for home page
+       ;; I.e (refx/dispatch [::events/load-something-with-ajax])
+       ;; Teardown can be done here.
+       :start (fn [& _params]
+                (set-title! "students"))}]}]
+
    ["subjects"
     {:name      ::subjects
      :view      views/view-subjects

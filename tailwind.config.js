@@ -4,7 +4,7 @@ module.exports = {
   content: [
     './public/js/app.js',
     './public/js/index.css',
-    './src/financial_module/**/*.cljs'
+    './src/school_module/**/*.cljs'
   ],
   plugins: [
     require("@tailwindcss/typography"),

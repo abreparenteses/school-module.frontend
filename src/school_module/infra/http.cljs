@@ -1,6 +1,6 @@
-(ns financial-module.infra.http
-  (:require [financial-module.infra.http.component :as http.component]
-            [financial-module.config :as config]))
+(ns school-module.infra.http
+  (:require [school-module.infra.http.component :as http.component]
+            [school-module.config :as config]))
 
 (defn request! [request-input]
   (http.component/request

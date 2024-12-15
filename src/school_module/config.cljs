@@ -1,4 +1,4 @@
-(ns financial-module.config)
+(ns school-module.config)
 
 (goog-define DEBUG true)
 (goog-define PROTOCOL "http")

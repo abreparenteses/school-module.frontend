@@ -1,10 +1,10 @@
-(ns financial-module.views
-  (:require [financial-module.views.attending :as views.attending]
-            [financial-module.views.courses :as views.courses]
-            [financial-module.views.main :as views.main]
-            [financial-module.views.login :as views.login]
-            [financial-module.views.students :as views.students]
-            [financial-module.views.subjects :as views.subjects]
+(ns school-module.views
+  (:require [school-module.views.attending :as views.attending]
+            [school-module.views.courses :as views.courses]
+            [school-module.views.main :as views.main]
+            [school-module.views.login :as views.login]
+            [school-module.views.students :as views.students]
+            [school-module.views.subjects :as views.subjects]
             [helix.core :refer [$ <> defnc]]
             [helix.dom :as d]
             [refx.alpha :as refx]))

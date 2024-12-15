@@ -1,8 +1,8 @@
-# financial-module
+# school-module
 
 ## Description
 
-This project is an integration of [financial-module.backend](https://github.com/abreparenteses/financial-module.backend) to provide fully responsive content for financial education - managing accounts payable.
+This project is an integration of [school-module.backend](https://github.com/abreparenteses/school-module.backend) to provide fully responsive content for financial education - managing accounts payable.
 
 ## Project structure
 

@@ -1,6 +1,6 @@
-(ns financial-module.sections.footer
+(ns school-module.sections.footer
   (:require
-   [financial-module.components.icon :refer [icon]]
+   [school-module.components.icon :refer [icon]]
    [helix.core :refer [$ defnc]]
    [helix.dom :as d]))
 

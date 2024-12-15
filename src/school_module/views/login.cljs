@@ -1,6 +1,6 @@
-(ns financial-module.views.login
+(ns school-module.views.login
   (:require
-   [financial-module.infra.session :as session]
+   [school-module.infra.session :as session]
    [helix.core :refer [defnc]]
    [helix.dom :as d]))
 

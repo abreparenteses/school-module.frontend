@@ -1,5 +1,5 @@
-(ns financial-module.events
-  (:require [financial-module.db :refer [default-db session->local-store]]
+(ns school-module.events
+  (:require [school-module.db :refer [default-db session->local-store]]
             [refx.alpha :as refx]
             [refx.interceptors :refer [path after]]
             [reitit.frontend.controllers :as rfc]

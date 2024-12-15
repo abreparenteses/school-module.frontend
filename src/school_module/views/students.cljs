@@ -1,7 +1,7 @@
-(ns financial-module.views.students
-  (:require [financial-module.sections.header :refer [header]]
-            [financial-module.sections.footer :refer [footer]]
-            [financial-module.infra.http :as http]
+(ns school-module.views.students
+  (:require [school-module.sections.header :refer [header]]
+            [school-module.sections.footer :refer [footer]]
+            [school-module.infra.http :as http]
             [helix.core :refer [$ defnc]]
             [helix.dom :as d]
             [helix.hooks :as hh]

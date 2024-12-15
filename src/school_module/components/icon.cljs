@@ -1,4 +1,4 @@
-(ns financial-module.components.icon
+(ns school-module.components.icon
   (:require
    [helix.core :refer [defnc]]
    [helix.dom :as d]))

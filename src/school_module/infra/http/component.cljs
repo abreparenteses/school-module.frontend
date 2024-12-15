@@ -1,4 +1,4 @@
-(ns financial-module.infra.http.component
+(ns school-module.infra.http.component
   (:require [lambdaisland.fetch :as fetch]
             [promesa.core :as p]))
 

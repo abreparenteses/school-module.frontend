@@ -1,4 +1,4 @@
-(ns financial-module.subs
+(ns school-module.subs
   (:require [refx.alpha :as refx]))
 
 (refx/reg-sub

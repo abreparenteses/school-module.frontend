@@ -4,7 +4,7 @@
  :builds {:app
           {:target :browser
            :output-dir "public/js"
-           :modules {:app {:init-fn financial-module.core/init}}
+           :modules {:app {:init-fn school-module.core/init}}
            :dev {:build-hooks [(teknql.tailwind/start-watch!)]}
            :release
            {:build-hooks [(teknql.tailwind/compile-release!)]}

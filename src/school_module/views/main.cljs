@@ -1,6 +1,6 @@
-(ns financial-module.views.main
-  (:require [financial-module.sections.header :refer [header]]
-            [financial-module.sections.footer :refer [footer]]
+(ns school-module.views.main
+  (:require [school-module.sections.header :refer [header]]
+            [school-module.sections.footer :refer [footer]]
             [helix.core :refer [$ defnc]]
             [helix.dom :as d]))
 

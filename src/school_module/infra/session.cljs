@@ -1,5 +1,5 @@
-(ns financial-module.infra.session
-  (:require [financial-module.infra.http :as http]
+(ns school-module.infra.session
+  (:require [school-module.infra.http :as http]
             [refx.alpha :as refx]))
 
 (defn update-session [{:keys [username password]}]

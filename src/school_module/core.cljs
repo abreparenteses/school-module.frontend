@@ -1,13 +1,13 @@
-(ns financial-module.core
+(ns school-module.core
   (:require ["react-dom/client" :as react-dom-client]
             [helix.core :refer [$ defnc]]
             [refx.alpha :as refx]
             [reitit.coercion.spec :as rss]
             [reitit.frontend :as rf]
             [reitit.frontend.easy :as rfe]
-            [financial-module.events]
-            [financial-module.subs]
-            [financial-module.routes :as routes]))
+            [school-module.events]
+            [school-module.subs]
+            [school-module.routes :as routes]))
 
 (defn on-navigate [new-match]
   (when new-match

@@ -1,4 +1,4 @@
-(ns financial-module.db
+(ns school-module.db
   (:require [cljs.reader]
             [refx.alpha :as refx]))
 

@@ -1,6 +1,6 @@
-(ns financial-module.routes
-  (:require [financial-module.views.login :refer [login]]
-            [financial-module.views :as views]))
+(ns school-module.routes
+  (:require [school-module.views.login :refer [login]]
+            [school-module.views :as views]))
 
 (defn- set-title! [title]
   (set! (.-title js/document) title))

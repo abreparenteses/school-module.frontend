@@ -1,4 +1,4 @@
-(ns financial-module.sections.header
+(ns school-module.sections.header
   (:require
    [helix.core :refer [defnc]]
    [helix.dom :as d]
